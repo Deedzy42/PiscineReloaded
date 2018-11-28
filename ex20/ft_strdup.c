@@ -6,7 +6,7 @@
 /*   By: amoachon <amoachon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/12 16:07:36 by amoachon          #+#    #+#             */
-/*   Updated: 2018/11/12 16:07:49 by amoachon         ###   ########.fr       */
+/*   Updated: 2018/11/28 18:20:26 by amoachon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strdup(char *src)
 	i = 0;
 	while (src[i])
 		i++;
-	if (!(str = (char*)malloc(sizeof(str) * i + 1)))
+	if (!(str = (char*)malloc(sizeof(*str) * i + 1)))
 		return (0);
 	i = 0;
 	while (src[i])
